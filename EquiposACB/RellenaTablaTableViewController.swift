@@ -130,6 +130,7 @@ class RellenaTablaTableViewController: UITableViewController, NSFetchedResultsCo
         pantallaDestino.nombreEstadio = registro.value(forKey: "estadio") as! String
         pantallaDestino.coordenadaX = registro.value(forKey: "latitud") as! NSDecimalNumber
         pantallaDestino.coordenadaY = registro.value(forKey: "longitud") as! NSDecimalNumber
+            
         }
 
      }
