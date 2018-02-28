@@ -148,7 +148,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Cfj-oM-pf1" kind="show" id="HxT-up-3Hm"/>
+                                    <segue destination="Cfj-oM-pf1" kind="show" identifier="muestraequipo" id="HxT-up-3Hm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -158,7 +158,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="rn1-H8-Qzg">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ENo-V9-tUs"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ENo-V9-tUs">
+                            <connections>
+                                <segue destination="ceS-g2-dCR" kind="show" id="sYF-rp-iUT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8BE-OJ-qx4" userLabel="First Responder" sceneMemberID="firstResponder"/>

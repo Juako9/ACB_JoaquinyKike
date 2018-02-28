@@ -120,7 +120,7 @@ class RellenaTablaTableViewController: UITableViewController, NSFetchedResultsCo
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "muestraequipo"{
          let pantallaDestino: VerEquipoViewController = segue.destination as! VerEquipoViewController
         let indice = tableView.indexPathForSelectedRow
         let registro: NSManagedObject = self.fetchedResultsController.object(at: indice!) as! NSManagedObject
@@ -130,7 +130,7 @@ class RellenaTablaTableViewController: UITableViewController, NSFetchedResultsCo
         pantallaDestino.nombreEstadio = registro.value(forKey: "estadio") as! String
         pantallaDestino.coordenadaX = registro.value(forKey: "latitud") as! NSDecimalNumber
         pantallaDestino.coordenadaY = registro.value(forKey: "longitud") as! NSDecimalNumber
-        
+        }
 
      }
     
